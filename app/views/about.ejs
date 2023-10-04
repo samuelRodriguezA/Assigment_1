@@ -1,16 +1,50 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
-   
 
 <main class="container">
   <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-    <p>I am eating</p>
+    <div class="about-me">
+      <!-- Image (left) -->
+      <div class="image-container">
+        <img src="img/samuel.png" alt="Samuel's Image" class="profile-image">
+      </div>
+      <!-- Information (right) -->
+      <div class="info-container">
+        <h2>Welcome to the about me page, here you can learn more about the creator of the page</h2>
+        <h1>Samuel Rodriguez Armesto</h1>
+        <p>
+          I am a student at Centennial College, and this is my first portfolio. I am passionate about web development and design. Through this portfolio, I hope to showcase my skills and projects to the world.
+          Feel free to explore and learn more about me and my work.
+        </p>
+      </div>
     </div>
-    </main>
-    <!--bottom nav-->
-   
-   
-      <!--script section-->
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
+  </div>
+</main>
+
+<!-- bottom nav -->
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+
+<style>
+  /* CSS for the layout */
+  .about-me {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-container {
+    flex: 1;
+    max-width: 50%; /* Adjust the maximum width of the image as needed */
+    text-align: center;
+  }
+
+  .profile-image {
+    max-width: 100%; /* Adjust the maximum width of the image as needed */
+    max-height: auto; /* Maintain aspect ratio */
+  }
+
+  .info-container {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+  }
+</style>

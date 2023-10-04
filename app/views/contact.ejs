@@ -1,16 +1,50 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
-   
 
 <main class="container">
   <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-    <p>I am eating</p>
+    <h1 class="display-4">Contact Me</h1>
+    <p>If you'd like to get in touch, feel free to reach out using the contact information below:</p>
+    
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <ul>
+        <li>Email: srodri71@my.centennialcollege.ca</li>
+        <li>Phone: 123 456 7891</li>
+        <li>Address: Centennial College Progress Campus</li>
+      </ul>
     </div>
-    </main>
-    <!--bottom nav-->
-   
-   
-      <!--script section-->
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
+
+     
+    </div>
+  </div>
+</main>
+
+<!-- Bottom Navigation and Footer -->
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+
+<style>
+  /* CSS for the contact page */
+  .contact-info {
+    margin-top: 20px;
+  }
+
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .contact-info ul li {
+    margin-bottom: 10px;
+  }
+
+  .contact-form {
+    margin-top: 20px;
+  }
+</style>

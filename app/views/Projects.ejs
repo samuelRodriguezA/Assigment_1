@@ -1,16 +1,51 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
-   
 
 <main class="container">
   <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-    <p>I am eating</p>
+    <h1 class="display-4">Projects</h1>
+    <p>Here are some of the projects I've worked on:</p>
+
+
+    <div class="project">
+      <h2>Project 1: Portfolio Website</h2>
+      <!-- Add an image for Project 1 -->
+      <img src="/img/logo.png" alt="Project 1 Image">
+      <p>
+        Description: This is my personal portfolio website where I showcase my skills and projects.
+      </p>
+      <p>
+        Technologies Used: HTML, CSS, JavaScript
+      </p>
     </div>
-    </main>
-    <!--bottom nav-->
-   
-   
-      <!--script section-->
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
+
+
+    <div class="project">
+      <h2>Project 2: Wardrobe</h2>
+      <!-- Add an image for Project 2 -->
+      <img src="/img/project2.png" alt="Project 2 Image">
+      <p>
+        Description: This is a group project we are currently working with my team at Software System Design.
+      </p>
+      <p>
+        
+      </p>
+    </div>
+
+  
+    <div class="project">
+      <h2>Project 3: MedDrop</h2>
+      <!-- Add an image for Project 3 -->
+      <img src="/img/project3.png" alt="Project 3 Image">
+      <p>
+        Description: Med drop is a project from last semester where we share an idea about an interconnected red of pharma around the world that could deliver to your front door
+      </p>
+     
+    </div>
+
+
+  </div>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
